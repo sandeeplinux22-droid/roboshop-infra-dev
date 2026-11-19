@@ -16,7 +16,7 @@ module "redis_sg" {
 
 module "sg" {
     count = length(var.sg_names)
-    source = "git::https://https://github.com/sandeeplinux22-droid/Terraform-aws-vpc.git?ref=main"
+    source = "git::https://github.com/sandeeplinux22-droid/Terraform-aws-vpc.git"
     project = var.project
     environment = var.environment
     sg_name = replace(var.sg_names[count.index], "_", "-")
