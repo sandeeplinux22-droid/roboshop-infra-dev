@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket       = "remote-tf-state-92s-dev"
+    bucket       = "remote-s3-sandeep"
     key          = "sg-rules.tfstate"
     region       = "us-east-1"
     encrypt      = true
